@@ -24,3 +24,8 @@ mother(X,Y):-
 grandparent(X,Y):-
     parent(X,Y),
     parent(Y,Z).
+
+sister(X,Y):-
+    parent(Z,X),
+    parent(Z,Y),
+    female(X).
